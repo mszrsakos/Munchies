@@ -2,13 +2,12 @@
 footer{
     height: 400px;
     width: 100%;
+    background-color: #6C9995;
 }
 
 #footerFelso{
-    background-color: #6C9995;
     display: inline;
     height: 70%;
-    width: 100%;
 }
 
 #logo{
