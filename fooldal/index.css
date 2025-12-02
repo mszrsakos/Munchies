@@ -1,14 +1,56 @@
 html{
     background-color: #D2E4E3;
 }
+
+
 nav{
     height: 100px;
     background-color: #A3C4BC;
     
 }
+
+
 footer{
     
     margin-top: 20px;
     height: 100px;
     background-color: #A3C4BC;
 }
+
+
+/*oldalak*/
+
+#receptek{
+    font-family: "Junge", cursive;
+    margin-top: 20px;
+    height: 200px;
+    width:200px;
+    background-color: #E8F1F0;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 25px;
+    border: 5px solid #6C9995;
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}
+#menutervezo{
+    margin-top: 20px;
+    height: 200px;
+    width:200px;
+    background-color: #E8F1F0;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+
+    border-radius: 25px;
+    border: 5px solid #6C9995;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/*.oldalak{
+
+}
+*/
