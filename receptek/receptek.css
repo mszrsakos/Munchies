@@ -1,0 +1,38 @@
+html{
+    background-color: #D2E4E3;
+    color: white;
+}
+nav{
+        height: 110px;
+        background-color: #A3C4BC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+ 
+}
+#logo{
+    height: 100px;
+    margin-left: 20px;
+    
+    
+}
+nav p{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: -20px;
+    
+}
+.jobb_oldal_nav{
+   gap: 30px;
+    display: flex;
+    
+}
+.nav_elem{
+ margin-top: 30px;
+ font-size: 30px;
+   
+}
+.icon{
+    height: 80px;
+}
