@@ -1,11 +1,15 @@
-html{
+body{
     background-color: #D2E4E3;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 
 nav{
-    height: 100px;
-    background-color: #A3C4BC;
+    height: 500px;
+    background-image: url("../imgs/desktop_nav.jpg");
     
 }
 
@@ -25,17 +29,19 @@ footer{
     font-style: italic;
     font-weight: 400;
     margin-top: 20px;
-    height: 200px;
-    width:200px;
+    height: 500px;
+    width:400px;
     background-color: #E8F1F0;
     text-align: center;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 50px;
+    float: left;
+    margin-left: 150px;
     border-radius: 25px;
     border: 5px solid #6C9995;
     display: flex;
     justify-content: center;
     align-items: center 
+    
 }
 #receptek:hover{
     background-color: #C1DCDC;
@@ -43,20 +49,19 @@ footer{
     font-weight: 500;
 }
 #menutervezo{
-
+    float: right;
+    margin-right: 150px;
     font-family: "Inter";
     font-style: italic;
     font-weight: 400;
     margin-top: 20px;
-    height: 200px;
-    width:200px;
+    height: 500px;
+    width:400px;
     background-color: #E8F1F0;
     text-align: center;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 50px;
     border-radius: 25px;
     border: 5px solid #6C9995;
-    display: flex;
     justify-content: center;
     align-items: center
 }
@@ -65,9 +70,10 @@ footer{
     cursor: pointer;
     font-weight: 500;
 }
-/*.oldalak{
-
 .oldalak{
     display: flex;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+
 }
-*/
+
