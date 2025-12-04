@@ -21,7 +21,9 @@ footer{
 /*oldalak*/
 
 #receptek{
-    font-family: "Junge", cursive;
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
     margin-top: 20px;
     height: 200px;
     width:200px;
@@ -35,7 +37,16 @@ footer{
     justify-content: center;
     align-items: center 
 }
+#receptek:hover{
+    background-color: #C1DCDC;
+    cursor: pointer;
+    font-weight: 500;
+}
 #menutervezo{
+
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
     margin-top: 20px;
     height: 200px;
     width:200px;
@@ -43,12 +54,16 @@ footer{
     text-align: center;
     font-size: 30px;
     display: inline-block;
-
     border-radius: 25px;
     border: 5px solid #6C9995;
     display: flex;
     justify-content: center;
     align-items: center
+}
+#menutervezo:hover{
+    background-color: #C1DCDC;
+    cursor: pointer;
+    font-weight: 500;
 }
 /*.oldalak{
 
