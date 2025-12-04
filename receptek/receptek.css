@@ -1,6 +1,7 @@
 html{
     background-color: #D2E4E3;
     color: white;
+    font-family:"Inter";
 }
 nav{
         height: 110px;
@@ -35,4 +36,36 @@ nav p{
 }
 .icon{
     height: 80px;
+}
+/* lablec */
+  .lablec_felso_resz{
+    margin-top: 400px;
+    background-color: #A3C4BC;
+    height:500px;
+  }
+  .lablec_bal_oldal{
+    margin-left: 50px;
+    font-size: 30px;
+    align-items: center;
+    flex-direction: column;
+    border-right: black 2px solid;
+  }
+  .logo-text{
+    margin-left: 80px;
+    margin-top: -80px;
+    color: white;
+
+  }
+.lablec_logo{
+    width: 300px;
+    height: auto;
+    display: block;
+}
+/* tartalom */
+.kep{
+    margin: 30px;
+    height: 400px;
+}
+.bal_oldal_tartalom{
+    width: 800px;
 }
