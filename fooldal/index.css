@@ -4,21 +4,37 @@ body{
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    font-family: "Inter";
+    font-style: italic;
+    background-image: url("../imgs/desktop_nav85opacity.jpg");
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+
+    
 }
+
 
 
 nav{
     height: 500px;
-    background-image: url("../imgs/desktop_nav.jpg");
+    
+
+
+
+
+    
+}
+#navTxt{
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #000000;
     
 }
 
-
 footer{
-    
-    margin-top: 20px;
-    height: 100px;
-    background-color: #A3C4BC;
+
 }
 
 
@@ -27,7 +43,7 @@ footer{
 #receptek{
     font-family: "Inter";
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 20px;
     height: 500px;
     width:400px;
@@ -40,20 +56,21 @@ footer{
     border: 5px solid #6C9995;
     display: flex;
     justify-content: center;
-    align-items: center 
+    align-items: center ;
+
     
 }
 #receptek:hover{
     background-color: #C1DCDC;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 800;
 }
 #menutervezo{
     float: right;
     margin-right: 150px;
     font-family: "Inter";
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 20px;
     height: 500px;
     width:400px;
@@ -68,7 +85,7 @@ footer{
 #menutervezo:hover{
     background-color: #C1DCDC;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 800;
 }
 .oldalak{
     display: flex;
