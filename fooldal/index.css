@@ -94,3 +94,67 @@ footer{
 
 }
 
+/*footer kezdet*/
+footer{
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+#footerFelso{
+    display: flex;
+    background-color: #6C9995;
+    height: 80%;
+    width: 100%;
+}
+
+#footerAlso{
+    height: 20%;
+}
+
+#logo{
+    padding: 0px 20px;
+    height: 100%;
+    vertical-align: top;
+}
+#logoImg{
+    height: 100%;
+    width: 100%;
+}   
+#socialmedia{
+    height: 100%;
+    width: 40%;
+}
+#imgsRow{
+    height: 25%;
+    display: flex;
+}
+#jobboldal{
+    right: 0;
+    height: 100%;
+}
+#kapcsolat{
+    height: 70%;
+    width: 100%;
+}
+#hirlevel{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+input{
+    width: 60%;
+    height: 40%;
+}
+
+#footerAlso{
+    display: flex;
+    background-color: #8C8C8C;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+/* footer vége*/
+
