@@ -6,7 +6,7 @@ body{
     grid-template-rows: auto 1fr auto;
     font-family: "Inter";
     font-style: italic;
-    background-image: url("../imgs/desktop_nav85opacity.jpg");
+    background-image: url("../imgs/kezdolapkep85opacity.jpg");
     background-size: 100% 150%;
     background-repeat: no-repeat;
 
@@ -16,18 +16,13 @@ body{
 
 
 nav{
-    height: 500px;
-    
-
-
-
-
+    height: 300px;
     
 }
 #navTxt{
     color: white;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     font-size: 60px;
     text-shadow: 2px 2px 4px #000000;
     
@@ -44,7 +39,7 @@ footer{
     font-family: "Inter";
     font-style: italic;
     font-weight: 700;
-    margin-top: 20px;
+
     height: 500px;
     width:400px;
     background-color: #E8F1F0;
@@ -71,7 +66,7 @@ footer{
     font-family: "Inter";
     font-style: italic;
     font-weight: 700;
-    margin-top: 20px;
+
     height: 500px;
     width:400px;
     background-color: #E8F1F0;
@@ -93,14 +88,19 @@ footer{
     margin: 0 auto 0 auto;
 
 }
+/*oldal vége*/
+
+
+
 
 /*footer kezdet*/
 footer{
     height: 300px;
     width: 100%;
-    position: fixed;
+    position:static;
     bottom: 0;
     color: white;
+    margin-top: 250px;
 }
 
 #footerFelso{

@@ -3,6 +3,16 @@ html{
     color: white;
     font-family:"Inter";
 }
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Inter";
+    font-style: italic;
+    background-image: url("../imgs/receptek_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 nav{
         height: 110px;
         background-color: #A3C4BC;
@@ -41,9 +51,10 @@ nav p{
 footer{
   height: 300px;
   width: 100%;
-  position: fixed;
+  position:static;
   bottom: 0;
   color: white;
+  margin-top: 250px;
 }
 
 #footerFelso{
