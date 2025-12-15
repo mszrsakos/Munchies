@@ -2,11 +2,28 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* tablazat */
+.tablazat{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    margin: 40px;
+    border: 0.5px solid black;
+}
+.cell{
+    border: 0.5px solid black;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* footer */
 footer{
     height: 300px;
     width: 100%;
-    position: fixed;
+    position: static;
     bottom: 0;
     color: white;
 }
@@ -25,7 +42,13 @@ footer{
 #logo{
     padding: 0px 20px;
     height: 100%;
-    vertical-align: top;
+    display: flex;
+}
+#verticalLine {
+    width: 1px;
+    height: 80%; 
+    background-color: #fff; 
+    align-self: center;
 }
 #logoImg{
     height: 100%;
@@ -34,6 +57,8 @@ footer{
 #socialmedia{
     height: 100%;
     width: 40%;
+    align-content: center;
+    justify-items: center;
 }
 #imgsRow{
     height: 25%;
