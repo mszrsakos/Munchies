@@ -15,7 +15,7 @@ body{
 }
 nav{
         height: 110px;
-        background-color: #A3C4BC;
+        background-color: #6C9995;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -47,6 +47,78 @@ nav p{
 .icon{
     height: 80px;
 }
+/* Tartalom kezdete */
+
+.kep{
+  margin: 30px;
+  height: 400px;
+}
+.bal_oldal_tartalom{
+  width: 800px;
+}
+.container {
+  display: flex;
+  height: 100vh; /* teljes képernyő magasság */
+}
+
+.left {
+  width: 50%;
+  
+}
+
+.right {
+  width: 30%;
+  background-color: #6C9995;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 60%;
+}
+.right h1{
+  padding-left: 30px;
+
+}
+/* Hozzavalok rész */
+.hozzavalok{
+  margin-left: 40px;
+  background-color: #6C9995;
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
+}
+.hozzavalok h1{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.hozzavalok li{
+  padding: 5px;
+  font-size: 20px;
+  
+}
+/* adag szamlalo */
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#count {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+}
+
+
+
+/* Tartalom vége */
+
+
 /* footer */
 footer{
   height: 300px;
@@ -113,11 +185,3 @@ input{
 
 /* footer vége */
 
-/* tartalom */
-.kep{
-    margin: 30px;
-    height: 400px;
-}
-.bal_oldal_tartalom{
-    width: 800px;
-}
