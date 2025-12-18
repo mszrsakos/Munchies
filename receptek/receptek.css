@@ -28,6 +28,31 @@ nav{
     
     
 }
+#kereses{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  border-radius: 25px;
+}
+#kereses input[type="button"]{
+  width: 15%;
+  background-position-x: -5px;
+  border-radius: 50px;
+  height: 2.55rem;
+  background-color: #6C9995;
+  color: white;
+
+}
+#kereses input[type="button"]:hover{
+  background-color: #97bbb9;
+  color: black;
+}
+#kereses input[type="text"]{
+  border-radius: 50px;
+  padding-left: 1.25rem;
+  height: 2.25rem;
+}
 nav p{
     margin-left: 20px;
     font-size: 20px;
@@ -185,3 +210,41 @@ input{
 
 /* footer vége */
 
+/* tartalom */
+.kep{
+    margin: 30px;
+    height: 400px;
+}
+.bal_oldal_tartalom{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr); /* Három egyenlő oszlop */
+    gap: 20px;
+}
+
+.bal_oldal_tartalom #ajanlat{
+  color:  black;
+  padding-left: 4%;
+  font-size: 250%;
+  margin-bottom: 0;
+  font-weight: 600;
+
+}
+.bal_oldal_tartalom p{
+  color:  black;
+  padding-left: 4%;
+  font-size: 250%;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+#jobb_oldal_leiras{
+  float: right;
+  margin: auto;
+  color: black;
+  width: 50%;
+  display: flex;
+
+}
