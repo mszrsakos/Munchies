@@ -51,7 +51,7 @@ nav p{
 
 .kep{
   margin: 30px;
-  height: 400px;
+  height: 500px;
 }
 .bal_oldal_tartalom{
   width: 800px;
@@ -62,43 +62,76 @@ nav p{
 }
 
 .left {
+  width: 100%;
+  
+}
+.left h1{
+  background-color: white;
+  color: #6C9995;
+  font-weight: bold;
   width: 50%;
+  padding-left: 30px;
+  margin-bottom: 0px;
   
 }
 
+/* Elkeszites resz kezdete  */
 .right {
-  width: 30%;
+  width:100%;
+  margin-right: 50px;
   background-color: #6C9995;
   border-radius: 10px;
-  margin-top: 20px;
-  height: 60%;
+  margin-top: 90px;
+  height: 110%;
 }
 .right h1{
+  color: #6C9995;
   padding-left: 30px;
+  background-color: white;
+  width: 50%;
 
 }
+.right li{
+  padding: 10px;
+  font-size: 25px;
+}
+
+
 /* Hozzavalok rész */
 .hozzavalok{
   margin-left: 40px;
   background-color: #6C9995;
-  width: 50%;
-  height: 60%;
+  width: 80%;
+  height: auto;
   border-radius: 10px;
+  
 }
 .hozzavalok h1{
   padding-top: 10px;
   padding-left: 30px;
+  font-size: 40px;
+  width: 30%;
 }
 .hozzavalok li{
   padding: 5px;
-  font-size: 20px;
+  font-size: 30px;
   
 }
 /* adag szamlalo */
 .counter {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 10px;
+  float: right;
+  margin-top: -40px;
+  font-size: 20px;
+  margin-right: 10px;
+  
+  
+}
+.counter p{
+  margin-bottom: 10px;
+  padding-left: 40px;
 }
 
 .counter button {
@@ -113,6 +146,13 @@ nav p{
   width: 30px;
   text-align: center;
 }
+.counter2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  float: right;
+  
+}
 
 
 
@@ -126,7 +166,8 @@ footer{
   position:static;
   bottom: 0;
   color: white;
-  margin-top: 250px;
+  margin-top: 700px;
+  
 }
 
 #footerFelso{
