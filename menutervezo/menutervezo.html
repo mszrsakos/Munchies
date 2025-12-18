@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="menutervezo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    FullCalendar CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script> 
 </head>
 <body>
-    <main class="tablazat">
+    <h2>Javascript Fullcalendar</h2>
+    <div class="container">
+        <div id="calendar"></div>
+    </div>
+    <br>
+    <!-- <main class="tablazat">
         <div class="cell"></div>
         <div class="cell">Reggeli</div>
         <div class="cell">Ebéd</div>
@@ -59,10 +67,10 @@
         <div class="cell"><button>+</button></div>
         <div class="cell"><button>+</button></div>
         <div class="cell"><button>+</button></div>
-    </main>
+    </main> -->
     <div id="calendar"></div>
 
-
+    <!-- https://www.youtube.com/watch?v=dpHJ6OPHQeM&list=PLBNH5wg2uyC8rKJIlQlgyJTzCKc2zO50X&index=2 -->
     <footer>
         <div id="footerFelso">
             <div id="logo">
@@ -94,15 +102,15 @@
         </div>
     </footer>
     FullCalendar JS
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
-    </script>
-</body>
 </html>
+
+<script>
+    $(document).ready(function() {
+    $('#calendar').fullCalendar({
+        header:
+        {
+            left: "agendaWeek"
+        }
+    });
+ });
+ </script>
