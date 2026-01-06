@@ -13,6 +13,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.teljes_oldal{
+  padding-bottom: 100px;
+}
 nav{
         height: 110px;
         background-color: #6C9995;
@@ -178,21 +181,41 @@ nav p{
   float: right;
   
 }
+.tapanyag_kaloria{
+  
+  margin: auto;
+  width: 400px;
+  font-size: 20px;
+  background-color: #8C8C8C;
+  height: 10px;
+}
+table, td,th{
+  border-right: 1px solid black;
+  border-collapse: collapse;
+}
+.table th:last-of-type,
+.table td:last-of-type {
+  border-right: none;
+}
 
+.spacer{
 
+}
+.spacer2{
+  height: 400px;
+}
 
 /* Tartalom vége */
 
 
 /* footer */
 footer{
+  margin-top: 100px;
   height: 300px;
   width: 100%;
-  position:static;
+  position: static;
   bottom: 0;
   color: white;
-  margin-top: 700px;
-  
 }
 
 #footerFelso{
@@ -209,7 +232,13 @@ footer{
 #logo{
   padding: 0px 20px;
   height: 100%;
-  vertical-align: top;
+  display: flex;
+}
+#verticalLine {
+  width: 1px;
+  height: 80%; 
+  background-color: #fff; 
+  align-self: center;
 }
 #logoImg{
   height: 100%;
@@ -218,6 +247,8 @@ footer{
 #socialmedia{
   height: 100%;
   width: 40%;
+  align-content: center;
+  justify-items: center;
 }
 #imgsRow{
   height: 25%;
@@ -248,44 +279,7 @@ input{
   justify-content: center;
   vertical-align: middle;
 }
-
 /* footer vége */
 
-/* tartalom */
-.kep{
-    margin: 30px;
-    height: 400px;
-}
-.bal_oldal_tartalom{
-    width: 800px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(3, 1fr); /* Három egyenlő oszlop */
-    gap: 20px;
-}
 
-.bal_oldal_tartalom #ajanlat{
-  color:  black;
-  padding-left: 4%;
-  font-size: 250%;
-  margin-bottom: 0;
-  font-weight: 600;
 
-}
-.bal_oldal_tartalom p{
-  color:  black;
-  padding-left: 4%;
-  font-size: 250%;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-#jobb_oldal_leiras{
-  float: right;
-  margin: auto;
-  color: black;
-  width: 50%;
-  display: flex;
-
-}
