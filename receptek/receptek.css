@@ -1,4 +1,4 @@
-html{
+  html{
     background-color: #D2E4E3;
     color: white;
     font-family:"Inter";
@@ -54,11 +54,45 @@ nav{
   height: 2.25rem;
 } */
 
+
+/* Tartalom kezdete */
+
+.ajanlat_tartalom{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* teljes képernyő magasság */
+}
+
+.left {
+  width: 50%;
+  
+}
+.tartalom p{
+  text-align: center;
+}
+.right {
+  width: 30%;
+  background-color: #6C9995;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 60%;
+}
+.right h1{
+  padding-left: 30px;
+
+}
 .container{
   font-family: "Inter";
   width: 100%;
   min-height: 100vh;
-  padding: 5%;
+
   background-image: linear-gradient(#6C9995),(#6C9995),;
   background-position: center;
   background-size: cover;
@@ -69,12 +103,13 @@ nav{
 .search-bar{
   font-family: "Inter";
   width: 100%;
-  max-width: 700px;
+  max-width: 80%;
   display: flex;
   background: #6C9995;
   align-items: center;
   border-radius: 60px;
-  padding: 10px 20px;
+  padding: 5px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
 }
 .search-bar input{
   background: transparent;
@@ -83,22 +118,24 @@ nav{
   outline: none;
   padding: 24px 20px;
   font-size: 20px;
-  color: black;
+  color: white;
   font-size: 40px;
 }
 ::placeholder
 {
   color:white;
+  opacity: 25%;
 }
 .search-bar button img{
-  width: 25px;
+  width: 50px;
+
 }
 .search-bar button{
   border: 0;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #D2E4E3;
+  background: #6C9995;
 }
 nav p{
     margin-left: 20px;
@@ -119,72 +156,8 @@ nav p{
 .icon{
     height: 80px;
 }
-/* Tartalom kezdete */
 
-.kep{
-  margin: 30px;
-  height: 400px;
-}
-.bal_oldal_tartalom{
-  width: 800px;
-}
-.container {
-  display: flex;
-  height: 100vh; /* teljes képernyő magasság */
-}
 
-.left {
-  width: 50%;
-  
-}
-
-.right {
-  width: 30%;
-  background-color: #6C9995;
-  border-radius: 10px;
-  margin-top: 20px;
-  height: 60%;
-}
-.right h1{
-  padding-left: 30px;
-
-}
-/* Hozzavalok rész */
-.hozzavalok{
-  margin-left: 40px;
-  background-color: #6C9995;
-  width: 50%;
-  height: 60%;
-  border-radius: 10px;
-}
-.hozzavalok h1{
-  padding-top: 10px;
-  padding-left: 30px;
-}
-.hozzavalok li{
-  padding: 5px;
-  font-size: 20px;
-  
-}
-/* adag szamlalo */
-.counter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.counter button {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#count {
-  font-size: 20px;
-  width: 30px;
-  text-align: center;
-}
 
 
 
@@ -258,11 +231,11 @@ input{
 /* footer vége */
 
 /* tartalom */
-.kep{
-    margin: 30px;
-    height: 400px;
+.tartalom .kep{
+  margin: 30px;
+  height: 500px;
 }
-.bal_oldal_tartalom{
+.ajanlat_tartalom{
     width: 800px;
     margin: auto;
     text-align: center;
@@ -272,20 +245,22 @@ input{
     gap: 20px;
 }
 
-.bal_oldal_tartalom #ajanlat{
+.ajanlat{
   color:  black;
-  padding-left: 4%;
   font-size: 250%;
   margin-bottom: 0;
   font-weight: 600;
+  text-align: center;
 
 }
-.bal_oldal_tartalom p{
+.ajanlat_tartalom p{
   color:  black;
   padding-left: 4%;
   font-size: 250%;
   margin-bottom: 0;
   font-weight: 600;
+  text-align: center;
+  width: 100%;
 }
 #jobb_oldal_leiras{
   float: right;
