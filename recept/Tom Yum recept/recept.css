@@ -1,30 +1,16 @@
-html{
-    background-color: #D2E4E3;
-    color: white;
-    font-family:"Inter";
-}
-body{
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-family: "Inter";
-    font-style: italic;
-    background-image: url("../imgs/receptek_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.teljes_oldal{
-  padding-bottom: 100px;
-}
 /* Fejlec kezdete */
 nav{
-        height: 110px;
-        background-color: #6C9995;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
- 
+    height: 110px;
+    background-color: #6C9995;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+html {
+  background-color: #D2E4E3;
+  color: white;
+  font-family: "Inter";
 }
 #main_logo{
     height: 100px;
@@ -32,12 +18,17 @@ nav{
     
     
 }
-#kereses{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   font-family: "Inter";
-  border-radius: 25px;
+  font-style: italic;
+  background-color: #D2E4E3;
+  background-image: none;
+  background-size: initial;
+  background-repeat: initial;
 }
 #kereses input[type="button"]{
   width: 15%;
@@ -74,16 +65,23 @@ nav p{
    
 }
 .icon{
-    height: 80px;
+    height:   80px;
 }
 /* Fejlec vege */
 
 
 /* Tartalom kezdete */
 
-.kep{
-  margin: 30px;
-  height: 500px;
+.kep {
+  display: block;
+  margin: 30px auto 40px auto;
+  max-width: 90%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.25);
+  border: 3px solid #6C9995;
+  background: #fff;
 }
 .bal_oldal_tartalom{
   width: 800px;
@@ -114,7 +112,7 @@ nav p{
   background-color: #6C9995;
   border-radius: 10px;
   margin-top: 90px;
-  height: 110%;
+  height: 130%;
 }
 .right h1{
   color: #6C9995;
@@ -130,45 +128,142 @@ nav p{
 
 
 /* Hozzavalok rész */
-.hozzavalok{
-  margin-left: 40px;
-  background-color: #6C9995;
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
+/* Hozzávalók rész - modernizált */
+.hozzavalok {
+  margin: 40px auto 0 auto;
+  background: linear-gradient(135deg, #6C9995 80%, #97bbb9 100%);
+  width: 85%;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.18);
+  padding: 32px 32px 24px 32px;
+  position: relative;
+  min-width: 320px;
+  max-width: 600px;
+}
+.hozzavalok h1 {
+  padding-top: 0;
+  padding-left: 0;
+  font-size: 2.2rem;
+  color: #6C9995;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
   
 }
-.hozzavalok h1{
-  padding-top: 10px;
-  padding-left: 30px;
-  font-size: 40px;
-  width: 30%;
+.hozzavalok ul {
+  list-style: none;
+  padding: 0 0 0 8px;
+  margin: 0;
 }
-.hozzavalok li{
-  padding: 5px;
-  font-size: 25px;
-  
+.hozzavalok li {
+  background: rgba(255,255,255,0.92);
+  color: #3a4d4c;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px 18px;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.07);
+  transition: background 0.2s;
+}
+.hozzavalok li:last-child {
+  margin-bottom: 0;
+}
+.hozzavalok li:hover {
+  background: #e6f2f1;
 }
 /* adag szamlalo */
 .counter {
-  display: block;
+  display: flex;
   align-items: center;
-  gap: 10px;
-  float: right;
-  margin-top: -40px;
-  font-size: 20px;
-  margin-right: 10px;
-  
-  
+  gap: 16px;
+  position: static;
+  margin: 24px 0 18px 0;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.13);
+  border-radius: 12px;
+  padding: 8px 18px;
+  box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.07);
+  width: fit-content;
 }
-.counter p{
-  margin-bottom: 10px;
-  padding-left: 40px;
+.counter p {
+  margin: 0 8px 0 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
 }
-
+.counter2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .counter button {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background: #fff;
+  color: #6C9995;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px 0 rgba(44, 62, 80, 0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.counter button:hover {
+  background: #6C9995;
+  color: #fff;
+}
+#count {
+  font-size: 1.1rem;
+  width: 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+/* adag szamlalo */
+
+/* Elkészítés rész - modernizált */
+.right {
+  width: 95%;
+  margin: 60px auto 0 auto;
+  background: linear-gradient(135deg, #f7fafc 80%, #e6f2f1 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.13);
+  padding: 20px 18px 18px 18px;
+  min-width: 320px;
+  max-width: 1100px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.right h1 {
+  color: #6C9995;
+  background: none;
+  padding-left: 0;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.right ol {
+  padding-left: 24px;
+  margin: 0;
+}
+.right li {
+  background: rgba(108,153,149,0.09);
+  color: #3a4d4c;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 14px 18px 14px 12px;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.04);
+  transition: background 0.2s;
+  line-height: 1.6;
+}
+.right li:last-child {
+  margin-bottom: 0;
+}
+.right li:hover {
+  background: #d2e4e3;
+}
   font-size: 20px;
   cursor: pointer;
   background-color: #6C9995;
@@ -216,7 +311,7 @@ table,td{
 
 
 .spacer2{
-  height: 300px;
+  height: 700px;
 }
 
 /* Tartalom vége */
@@ -295,6 +390,9 @@ input{
   vertical-align: middle;
 }
 /* footer vége */
+
+
+
 
 
 
