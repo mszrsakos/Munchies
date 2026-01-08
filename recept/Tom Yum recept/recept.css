@@ -16,6 +16,7 @@ body{
 .teljes_oldal{
   padding-bottom: 100px;
 }
+/* Fejlec kezdete */
 nav{
         height: 110px;
         background-color: #6C9995;
@@ -75,6 +76,9 @@ nav p{
 .icon{
     height: 80px;
 }
+/* Fejlec vege */
+
+
 /* Tartalom kezdete */
 
 .kep{
@@ -142,7 +146,7 @@ nav p{
 }
 .hozzavalok li{
   padding: 5px;
-  font-size: 30px;
+  font-size: 25px;
   
 }
 /* adag szamlalo */
@@ -167,6 +171,8 @@ nav p{
   height: 40px;
   font-size: 20px;
   cursor: pointer;
+  background-color: #6C9995;
+  border: none;
 }
 
 #count {
@@ -184,14 +190,24 @@ nav p{
 .tapanyag_kaloria{
   
   margin: auto;
-  width: 400px;
+  width: 600px;
   font-size: 20px;
-  background-color: #8C8C8C;
+  background-color: #bdbdbd;
+  opacity: 0.8;
   height: 10px;
+
+}
+.valami{
+  padding-right: 100px;
 }
 table, td,th{
-  border-right: 1px solid black;
+  text-align: center;
+  border-right: 1px solid rgb(150, 150, 150);
   border-collapse: collapse;
+}
+table,td{
+  font-size: 12px;
+  
 }
 .table th:last-of-type,
 .table td:last-of-type {
@@ -202,7 +218,7 @@ table, td,th{
 
 }
 .spacer2{
-  height: 400px;
+  height: 300px;
 }
 
 /* Tartalom vége */
@@ -251,6 +267,7 @@ footer{
   justify-items: center;
 }
 #imgsRow{
+  margin-right: 450px;
   height: 25%;
   display: flex;
 }
