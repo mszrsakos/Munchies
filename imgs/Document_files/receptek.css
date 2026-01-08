@@ -65,7 +65,10 @@ nav{
 
 }
 
-
+.container {
+  display: flex;
+  height: 100vh; /* teljes képernyő magasság */
+}
 
 .left {
   width: 50%;
@@ -87,9 +90,8 @@ nav{
 }
 .container{
   font-family: "Inter";
-  width: 60%;
-  margin: auto;
-  min-height: 50vh;
+  width: 100%;
+  min-height: 100vh;
   background-image: linear-gradient(#6C9995),(#6C9995),;
   background-position: center;
   background-size: cover;
@@ -230,8 +232,8 @@ input{
 /* tartalom */
 .tartalom .kep{
   margin: 30px;
-  height: 350px;
-  width: 500px;
+  height: 500px;
+  width: 700px;
 }
 .ajanlat_tartalom{
     width: 800px;
@@ -253,16 +255,12 @@ input{
 }
 .ajanlat_tartalom p{
   color:  black;
+  padding-left: 4%;
   font-size: 250%;
   margin-bottom: 0;
   font-weight: 600;
   text-align: center;
   width: 100%;
-  
-}
-.ajanlat_tartalom a{
-  text-decoration: none;
-  color: black;
 }
 #jobb_oldal_leiras{
   float: right;
@@ -271,48 +269,4 @@ input{
   width: 50%;
   display: flex;
 
-}
-
-.ajanlat_tartalom button{
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-.img-wrapper{
-  position: relative;
-  overflow: hidden;
-}
-.img-wrapper>img{
-  display: block;
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-}
-.img-wrapper>.content{
-  position: absolute;
-  inset: 0;
-  font-size: 2rem;
-  padding: 1rem;
-  background-color: #8C8C8C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-wrapper>img,
-.img-wrapper>.content{
-  transition: transform 200mx ease-in-out;
-}
-
-.img-wrapper:hover>img.blur{
-  filter: blur(5px);
-}
-.content.fade{
-  transition: opacity 500ms ease-in-out;
-}
-.img-wrapper>.content.fade{
-  opacity: 0;
-}  
-.img-wrapper:hover>.content.fade{
-  opacity: 1;
 }
