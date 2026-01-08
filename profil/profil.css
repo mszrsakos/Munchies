@@ -1,0 +1,127 @@
+html{
+    background-color: #D2E4E3;
+    color: white;
+    font-family:"Inter";
+}
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Inter";
+    font-style: italic;
+    background-image: url("../imgs/receptek_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Fejlec kezdete */
+nav{
+    height: 110px;
+    background-color: #6C9995;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+#main_logo{
+height: 100px;
+margin-left: 20px;
+
+
+}
+#kereses{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Inter";
+border-radius: 25px;
+}
+#kereses input[type="button"]{
+width: 15%;
+background-position-x: -5px;
+border-radius: 50px;
+height: 2.55rem;
+background-color: #6C9995;
+color: white;
+
+}
+#kereses input[type="button"]:hover{
+background-color: #97bbb9;
+color: black;
+}
+#kereses input[type="text"]{
+border-radius: 50px;
+padding-left: 1.25rem;
+height: 2.25rem;
+}
+nav p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: -20px;
+
+}
+.jobb_oldal_nav{
+gap: 30px;
+display: flex;
+
+}
+.nav_elem{
+margin-top: 30px;
+font-size: 30px;
+
+}
+.icon{
+height: 80px;
+}
+/* Fejlec vege */
+
+/* Szemelyes adatok kezdete */
+.szemelyes_adatok{
+    background-color: #91b4b1;
+    height: 70%;
+    display: flex;
+}
+.profil_kep {
+    padding-left: 300px;
+    width: 50%;
+}
+.adatok h1{
+    padding-top: 20px;
+  font-size: 60px;
+}
+.valami{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+
+
+
+/* Szemelyes adatok vege */
+
+/* Tartalom kezdete */
+.button1{
+    margin-left: 300px;
+    margin-top: 30px;
+    background-color: #6C9995;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    height: 60px;
+    width: 500px;
+    color: white;
+}
+.button2{
+    margin-left: 300px;
+    margin-top: 30px;
+    background-color: #6C9995;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    height: 60px;
+    width: 500px;
+    color: white;
+}
