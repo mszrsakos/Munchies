@@ -253,11 +253,20 @@ input{
 }
 
 .ajanlat{
-  color:  black;
+  color: black;
   font-size: 250%;
-  margin-bottom: 0;
   font-weight: 600;
-  text-align: center;
+  text-align: center; /* Szöveg vízszintes középre igazítása */
+  background-color: #ffffff; /* Háttérszín */
+  background-size: auto;
+  display: flex; /* Flexbox használata */
+  justify-content: center; /* Vízszintes középre igazítás */
+  align-items: center; /* Függőleges középre igazítás */
+  padding: 10px 20px; /* Szöveg körüli belső margó */
+  border-radius: 10px; /* Lekerekített sarkok */
+  margin: 0 auto; /* Középre igazítás a szülőelemben */
+  width: fit-content; /* Csak a tartalom szélességét vegye figyelembe */
+
 
 }
 .ajanlat_tartalom p{
@@ -268,6 +277,11 @@ input{
   text-align: center;
   width: 100%;
   
+}
+.ajanlat p {
+  margin: 0; /* Eltávolítja az alapértelmezett margót */
+  line-height: 1.5; /* Szöveg sorainak magassága */
+  text-align: center; /* Szöveg középre igazítása */
 }
 .ajanlat_tartalom a{
   text-decoration: none;
@@ -281,7 +295,31 @@ input{
   display: flex;
 
 }
+.kepLink {
+  display: block; /* A hivatkozás blokkszintűvé tétele */
+  text-decoration: none; /* Aláhúzás eltávolítása */
+  color: inherit; /* Szöveg színének öröklése */
+}
 
+.kepLink img {
+  display: block; /* Kép blokkszintűvé tétele */
+  width: 100%; /* Kép teljes szélességben */
+  aspect-ratio: 1/1; /* Négyzetes arány */
+  object-fit: cover; /* Kép kitöltése arányosan */
+  object-position: center; /* Középre igazítás */
+}
+.kepLink .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgba(108, 153, 149, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
 .ajanlat_tartalom button{
   border: none;
   background: none;
@@ -316,6 +354,11 @@ input{
 .img-wrapper>img,
 .img-wrapper>.content{
   transition: transform 200mx ease-in-out;
+  color: white;
+}
+.img-wrapper:hover .content {
+  opacity: 1;
+  color: white;
 }
 
 .img-wrapper:hover>img.blur{
@@ -323,6 +366,7 @@ input{
 }
 .content.fade{
   transition: opacity 500ms ease-in-out;
+  color: white;
 }
 .img-wrapper>.content.fade{
   opacity: 0;
