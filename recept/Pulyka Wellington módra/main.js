@@ -1,18 +1,20 @@
 
 // Hozzávalók mennyiségének dinamikus frissítése az adagok számának változtatásakor
 const alapHozzavalok = [
-    { alap: 50, egyseg: 'dkg', szoveg: 'folyami rák (20 db rákfarok)' },
-    { alap: 20, egyseg: 'db', szoveg: 'shiitake gomba' },
-    { alap: 25, egyseg: 'dkg', szoveg: 'fafülgomba' },
-    { alap: 2, egyseg: 'db', szoveg: 'citromfű ízlés szerint' },
-    { alap: 2, egyseg: 'lime', szoveg: 'lime-ból nyert limelé' },
-    { alap: 2, egyseg: 'db', szoveg: 'chili' },
-    { alap: 2, egyseg: 'ek', szoveg: 'szójaszósz' },
-    { alap: 1, egyseg: 'ek', szoveg: 'halszósz' },
-    { alap: 1, egyseg: 'db', szoveg: 'közepes újhagyma' },
-    { alap: null, egyseg: '', szoveg: 'koriander ízlés szerint' },
-    { alap: 1, egyseg: 'teáskanál', szoveg: 'cukor' },
-    { alap: 1.5, egyseg: 'l', szoveg: 'hal alaplé' }
+    { alap: 800, egyseg: 'g', szoveg: 'pulykamell' },
+    { alap: 500, egyseg: 'g', szoveg: ' csiperkegomba (lehetőleg barna csiperke vagy vegyes erdei gombát válasszunk)' },
+    { alap: 1, egyseg: 'db', szoveg: 'nagy fej vöröshagyma' },
+    { alap: 3, egyseg: 'db', szoveg: 'gerezd fokhagyma' },
+    { alap: 200, egyseg: 'g', szoveg: 'prosciutto' },
+    { alap: 400, egyseg: 'g', szoveg: 'leves tészta' },
+    { alap: 1, egyseg: 'ek', szoveg: 'dijoni mustár' },
+    { alap: 1, egyseg: null, szoveg: 'teáskanál kakukkfű' },
+    { alap: 1, egyseg: null, szoveg: 'teáskanál rozmaring' },
+    { alap: 1, egyseg: 'db', szoveg: 'tojás' },
+    { alap: 2, egyseg: 'ek', szoveg: 'olívaolaj' },
+    { alap: null, egyseg: null, szoveg: 'só ízlés szerint' },
+    { alap: null, egyseg: null, szoveg: 'fekete bors ízlés szerint' },
+    { alap: null, egyseg: null, szoveg: '1 ek konyak (opcionális)' }
 ];
 
 let adag = 1;
