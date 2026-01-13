@@ -59,7 +59,10 @@ nav{
 
 .ajanlat_tartalom{  
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-between; /* Egyenletes elosztás a képek között */
+  align-items: center; /* Képek igazítása függőlegesen */
+  gap: 10px;
   align-items: center;
   min-height: 400px;
 
@@ -89,7 +92,7 @@ nav{
   font-family: "Inter";
   width: 60%;
   margin: auto;
-  min-height: 50vh;
+  min-height: 20vh;
   background-image: linear-gradient(#6C9995),(#6C9995),;
   background-position: center;
   background-size: cover;
@@ -194,10 +197,13 @@ footer{
 #socialmedia{
   height: 100%;
   width: 40%;
+  align-items: center;
 }
 #imgsRow{
-  height: 25%;
+  height: 40%;
   display: flex;
+  justify-content: space-evenly;  
+
 }
 #jobboldal{
   right: 0;
@@ -207,6 +213,9 @@ footer{
   height: 70%;
   width: 100%;
 }
+
+
+
 #hirlevel{
   height: fit-content;
   width: 100%;
@@ -228,7 +237,7 @@ input{
 /* footer vége */
 
 /* tartalom */
-.tartalom .kep{
+.ajanlat_tartalom>.kep{
   margin: 30px;
   height: 350px;
   width: 500px;
@@ -281,6 +290,9 @@ input{
 .img-wrapper{
   position: relative;
   overflow: hidden;
+  flex: 1; /* Egyenlő szélesség a képek között */
+  max-width: 33%; /* A három kép egy sorban legyen */
+  text-align: center; /* Igazítás középre */
 }
 .img-wrapper>img{
   display: block;
@@ -288,13 +300,15 @@ input{
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
+  height: auto;
 }
 .img-wrapper>.content{
   position: absolute;
   inset: 0;
   font-size: 2rem;
   padding: 1rem;
-  background-color: #8C8C8C;
+  background-color: #6C9995;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,5 +328,9 @@ input{
   opacity: 0;
 }  
 .img-wrapper:hover>.content.fade{
-  opacity: 1;
+  opacity: 0.7;
+
 }
+
+
+/* tartalom vége */
