@@ -1,18 +1,19 @@
 
 // Hozzávalók mennyiségének dinamikus frissítése az adagok számának változtatásakor
 const alapHozzavalok = [
-    { alap: , egyseg: '', szoveg: '' },
-    { alap: , egyseg: '', szoveg: '' },
-    { alap: , egyseg: '', szoveg: '' },
-    { alap: , egyseg: '', szoveg: '' },
-    { alap: , egyseg: '', szoveg: '' },
-    { alap: , egyseg: '', szoveg: 'chili' },
-    { alap: , egyseg: '', szoveg: 'szójaszósz' },
-    { alap: , egyseg: '', szoveg: 'halszósz' },
-    { alap: , egyseg: '', szoveg: 'közepes újhagyma' },
-    { alap: , egyseg: '', szoveg: 'koriander ízlés szerint' },
-    { alap: , egyseg: '', szoveg: 'cukor' },
-    { alap: , egyseg: '', szoveg: 'hal alaplé' }
+    { alap: 1, egyseg: 'db', szoveg: 'kacsamell (2 fél)' },
+    { alap: null, egyseg: '', szoveg: 'só ízlés szerint' },
+    { alap: null, egyseg: '', szoveg: 'bors ízlés szerint' },
+    { alap: 1, egyseg: 'db', szoveg: 'lilahagyma' },
+    { alap: null, egyseg: '', szoveg: 'só ízlés szerint' },
+    { alap: null, egyseg: '', szoveg: 'bors ízlés szerint' },
+    { alap: null, egyseg: '', szoveg: 'őrölt fűszerkömény ízlés szerint' },
+    { alap: null, egyseg: '', szoveg: 'nádcukor' },
+    { alap: 3, egyseg: 'ek', szoveg: 'közepes fej vöröskáposzta' },
+    { alap: 0.5, egyseg: '', szoveg: 'közepes fej káposzta' },
+    { alap: 3, egyseg: 'ek', szoveg: 'kacsazsír' },
+    { alap: 2.5, egyseg: 'dl', szoveg: 'vörösbor' },
+    { alap: 45, egyseg: 'dkg', szoveg: 'tészta (főtt)' }
 ];
 
 let adag = 1;

@@ -103,6 +103,7 @@ nav p{
   width: 50%;
   padding-left: 30px;
   margin-bottom: 0px;
+  border-radius: 20px;
   
 }
 
@@ -290,7 +291,8 @@ nav p{
 
 }
 .valami{
-  padding-right: 100px;
+  padding-right: 0px;
+  border-radius: 20px;
 }
 table, td,th{
   text-align: center;
@@ -375,8 +377,29 @@ footer{
   display: flex;
 }
 input{
-  width: 60%;
-  height: 40%;
+  
+  
+}
+.email{
+  width: 90%;
+  height:40%;
+  border-radius:5px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: none;
+  background-color: #fff  ;
+  
+  
+}
+.spacer_gombok{
+  width: 30px;
+}
+.iratkozas{
+  border: none;
+  background-color:#8dcac5 ;
+  color: white;
+  border-radius: 4px;
+  font-size: 17px;
 }
 
 #footerAlso{
