@@ -2,6 +2,6 @@
 const menutervezoBtn = document.getElementById('menutervezo');
 if (menutervezoBtn) {
     menutervezoBtn.addEventListener('click', function() {
-        window.location.href = '../menutervezo/menutervezo.html';
+        window.location.href = '../menutervezo/menutervezo.php';
     });
 }

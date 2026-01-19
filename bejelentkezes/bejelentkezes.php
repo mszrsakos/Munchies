@@ -6,7 +6,7 @@
         exit();
     }
 
-    include("database.php");
+    include("../database.php");
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])) {
        
@@ -48,6 +48,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="/munchies/header/header.css">
     <link rel="stylesheet" href="bejelentkezes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,17 +56,7 @@
     <script src="bejelentkezes.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="bal_oldal_nav">
-            <img id="main_logo" src="/imgs/munchieslogo.png " alt="">
-            <p>Munchies</p>
-        </div>
-        <div class="jobb_oldal_nav">
-            <div class="nav_elem">Receptek</div>
-            <div class="nav_elem"> Menütervező</div>
-            <img class="icon" src="/imgs/profil.png" alt="">
-        </div>
-    </nav>
+    <?php include("../header/header.html"); ?>
 
     <main>
         <form id="loginForm" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">

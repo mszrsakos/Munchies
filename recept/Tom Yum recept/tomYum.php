@@ -4,30 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="recept.css">
+    <link rel="stylesheet" href="tomYum.css">
+    <link rel="stylesheet" href="../../header/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <?php include("../../header/header.html");?>
 
     <div class="teljes_oldal">
-    <nav>
-        <div class="bal_oldal_nav">
-            <a href="/Munchies/fooldal/index.html"><img id="main_logo" src="/Munchies/imgs/munchieslogo.png" alt=""></a>
-            <a href="/Munchies/fooldal/index.html"><p>Munchies</p></a>
-
-        </div>
-        
-        <div class="jobb_oldal_nav">
-            <a href="/Munchies/receptek/receptek.html"><div class="nav_elem">Receptek</div></a>
-            <a href="/Munchies/menutervezo/menutervezo.html"><div class="nav_elem"> Menütervező</div></a>
-            <a href="/Munchies/profil/profil.html"><img class="icon" src="/Munchies/imgs/profil.png"></a>
-        </div>
-    </nav>
-
-
     <div class="container">
         <div class="left">
             <h1>Tom Yum édes-savanyú leves</h1>

@@ -5,24 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="receptek.css">
+    <link rel="stylesheet" href="/munchies/header/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="bal_oldal_nav">
-            <a href="../fooldal/index.php"><img id="main_logo" src="../imgs/munchieslogo.png " alt=""></a>
-            <p>Munchies</p>
 
-        </div>
-        
-        <div class="jobb_oldal_nav">
-            <div class="nav_elem">Receptek</div>
-            <div class="nav_elem"> Menütervező</div>
-            <a href="../profil/profil.php"><img class="icon" src="../imgs/profil.png" alt=""></a>
-        </div>
-    </nav>
+    <?php include("../header/header.html");?>
 
     <div class="tartalom">
         <!-- bal oldal -->
@@ -32,7 +22,7 @@
         <div class="ajanlat_tartalom"> 
             <!-- Tom Yum leves -->
                 <div class="img-wrapper">
-                        <a class="kepLink" href="../recept/Tom Yum recept/recept.html">
+                        <a class="kepLink" href="../recept/Tom Yum recept/tomYum.php">
                                 <img class="kep" src="../imgs/tomyum.jpeg" alt="">
                             
                             <div class="content fade">
@@ -42,7 +32,7 @@
                 </div>
                 <!-- Pulyka Wellington módra -->
                 <div class="img-wrapper">
-                        <a class="kepLink" href="../recept/Pulyka Wellington módra/pulykaWell.html">
+                        <a class="kepLink" href="../recept/Pulyka Wellington módra/pulykaWell.php">
                                 <img class="kep" src="../imgs/pulyka_wellington.jpeg" alt="">
                             
                             <div class="content fade">
@@ -52,7 +42,7 @@
                 </div>
                 <!-- Rozé kacsamell kétkáposztás kockával -->
                 <div class="img-wrapper"  > 
-                        <a class="kepLink" href="../recept/Rozé kacsamell kétkáposztás kockával/rozeKacsamell.html">
+                        <a class="kepLink" href="../recept/Rozé kacsamell kétkáposztás kockával/rozeKacsamell.php">
                                 <img class="kep" src="../imgs/roze-kacsamell.jpeg" alt="">
                             
                             <div class="content fade">

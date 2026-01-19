@@ -33,7 +33,7 @@
 <body>
     <nav><h1 id="navTxt">Munchies</h1></nav>
     <div id="oldalak">
-        <a href="../receptek/receptek.html"><div><button id="receptek">Receptek</button></div></a>
+        <a href="../receptek/receptek.php"><div><button id="receptek">Receptek</button></div></a>
         <div><button id="menutervezo">Menütervező</button></div>
     </div>
 

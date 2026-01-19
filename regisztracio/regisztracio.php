@@ -72,23 +72,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció</title>
     <link rel="stylesheet" href="../bejelentkezes/bejelentkezes.css">
+    <link rel="stylesheet" href="/munchies/header/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="regisztracio.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="bal_oldal_nav">
-            <a href="../fooldal/index.php"><img id="main_logo" src="../imgs/munchieslogo.png " alt=""></a>
-            <p>Munchies</p>
-        </div>
-        <div class="jobb_oldal_nav">
-            <div class="nav_elem">Receptek</div>
-            <div class="nav_elem"> Menütervező</div>
-            <img class="icon" src="/imgs/profil.png" alt="">
-        </div>
-    </nav>
+
+    <?php include("../header/header.html"); ?>
 
     <main>
         <form id="registerForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">

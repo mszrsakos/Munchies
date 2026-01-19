@@ -14,23 +14,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
-/* Fejlec kezdete */
-nav{
-    height: 110px;
-    background-color: #6C9995;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-
-}
-#main_logo{
-height: 100px;
-margin-left: 20px;
-
-
-}
 #kereses{
 display: flex;
 justify-content: center;
@@ -56,26 +39,6 @@ border-radius: 50px;
 padding-left: 1.25rem;
 height: 2.25rem;
 }
-nav p{
-margin-left: 20px;
-font-size: 20px;
-margin-top: -20px;
-
-}
-.jobb_oldal_nav{
-gap: 30px;
-display: flex;
-
-}
-.nav_elem{
-margin-top: 30px;
-font-size: 30px;
-
-}
-.icon{
-height: 80px;
-}
-/* Fejlec vege */
 
 /* Szemelyes adatok kezdete */
 .szemelyes_adatok{
