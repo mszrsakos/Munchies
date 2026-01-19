@@ -53,6 +53,7 @@
             <div>
                 <button class="button1">Személyes adatok módosítása</button>
                 <button class="button2">Változtatások mentése</button>
+                <button class="button2"><a href="../kijelentkezes.php">Kijelentkezés</a></button>
             </div>
 
             <div class="valtoztatasok">

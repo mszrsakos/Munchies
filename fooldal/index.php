@@ -1,3 +1,24 @@
+<?php
+    session_start();
+    
+    if (!isset($_SESSION["email"])) {
+    header("Location: ../regisztracio/regisztracio.php");
+    exit();
+    }
+
+    $email = $_SESSION["email"];
+
+    include("../database.php");
+
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $stmt->close();
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -18,7 +39,7 @@
 
     <footer>
         <div id="footerFelso">
-            <a href="../fooldal/index.html"><div id="logo"><img src="/imgs/munchieslogo.png" id="logoImg"></div></a>
+            <a href="../fooldal/index.php"><div id="logo"><img src="/imgs/munchieslogo.png" id="logoImg"></div></a>
             <div id="socialmedia">
                 <div id="imgsRow">
                     <img src="/imgs/facebooklogo.png" alt="">
