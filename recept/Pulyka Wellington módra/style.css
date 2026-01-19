@@ -103,7 +103,7 @@ nav p{
   width: 50%;
   padding-left: 30px;
   margin-bottom: 0px;
-  
+  border-radius: 20px;
 }
 
 /* Elkeszites resz kezdete  */
@@ -290,7 +290,8 @@ nav p{
 
 }
 .valami{
-  padding-right: 100px;
+  padding-right: 0px;
+  
 }
 table, td,th{
   text-align: center;
