@@ -20,6 +20,7 @@ nav{
         align-items: center;
         justify-content: space-between;
         padding: 0 20px;
+
  
 }
 #main_logo{
@@ -27,6 +28,46 @@ nav{
     margin-left: 20px;
     
     
+}
+.bal_oldal_nav>a{
+    align-items: center;
+    text-decoration: none;
+    
+}
+nav p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    font-size: 20px;
+    margin-top: -20px;
+    color:#fff;
+    
+}
+.nav_elem{
+    margin-top: 30px;
+    font-size: 30px;
+    
+    color: white;
+}
+
+.jobb_oldal_nav{
+  gap: 30px;
+  display: flex;
+  
+  
+}
+.jobb_oldal_nav>a{
+  text-decoration: none;
+
+}
+.jobb_oldal_nav>a:hover{
+  color: white;
+  font-weight: 600;
+}
+.icon{
+  height: 80px;
+  margin-top: 5%;
 }
 /* #kereses{
   display: flex;
@@ -116,10 +157,10 @@ nav{
   flex: 1;
   border: 0;
   outline: none;
-  padding: 24px 20px;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-size: 30px;
   color: white;
-  font-size: 40px;
+ 
 }
 ::placeholder
 {
@@ -137,25 +178,7 @@ nav{
   height: 60px;
   background: #6C9995;
 }
-nav p{
-    margin-left: 20px;
-    font-size: 20px;
-    margin-top: -20px;
-    
-}
-.jobb_oldal_nav{
-   gap: 30px;
-    display: flex;
-    
-}
-.nav_elem{
- margin-top: 30px;
- font-size: 30px;
-   
-}
-.icon{
-    height: 80px;
-}
+
 
 
 
