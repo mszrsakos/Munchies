@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <?php include("../../header/header.html");?>
+    <?php include("../header/receptHeader.html");?>
 
     <div class="teljes_oldal">
 
